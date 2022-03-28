@@ -12,24 +12,31 @@ struct instruments
 int main()
 {
     instruments instruments;
-    scalpel;
-    while (checking_operation_status == 0)
+    scalpel();
+    while (checking_operation_status() == 0)
     {
         std::cout << "Enter the name of the instrument: ";
         std::string instrument;
         std::cin >> instrument;
         if (instrument == instruments.scalpel)
         {
-            scalpel;
-        } else if (instrument == instruments.hemostat)
+            scalpel();
+        }
+        else if (instrument == instruments.hemostat)
         {
-            hemostat;
-        } else if (instrument == instruments.tweezers)
+            hemostat();
+        }
+        else if (instrument == instruments.tweezers)
         {
-            tweezers;
-        } else if (instrument == instruments.suture)
+            tweezers();
+        }
+        else if (instrument == instruments.suture)
         {
-            suture;
+            suture();
+        }
+        else
+        {
+            std::cout << "Error!" << std::endl;
         }
     }
 }

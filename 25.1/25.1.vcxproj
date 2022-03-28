@@ -142,7 +142,6 @@
     <ClCompile Include="25.1.cpp" />
     <ClCompile Include="Operation.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
